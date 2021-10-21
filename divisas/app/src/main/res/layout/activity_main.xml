@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/monedaActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moneda actual" />
+
+    <Spinner
+        android:id="@+id/monedaActualSP"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/monedaCambio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moneda de cambio" />
+
+    <Spinner
+        android:id="@+id/monedaCambioSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total a cambiar" />
+
+    <EditText
+        android:id="@+id/valorCambioET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/procesarCambio"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cambiar"
+            android:onClick="clickConvertir"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad a recibir" />
+
+</LinearLayout>
